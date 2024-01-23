@@ -6,7 +6,7 @@ palworld_rcon <command> [arguments...]
 
 Known Issues:
 
-1. The Server **NEVER REPONSE ANYTHING**
+1. The Server **NEVER RESPONSE ANYTHING**
 
 2. These commands don't have any output (/ShowPlayers, /Info)
 
