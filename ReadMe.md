@@ -4,6 +4,15 @@
 
 palworld_rcon <command> [arguments...]
 
+config.toml example:
+
+```toml
+[server]
+ip = "127.0.0.1"
+port = "25575" 
+password = "you admin password"
+```
+
 Known Issues:
 
 1. The Server **NEVER RESPONSE ANYTHING**
