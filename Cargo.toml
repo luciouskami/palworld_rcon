@@ -1,0 +1,9 @@
+[package]
+name = "palworld_rcon"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rcon = {version="0.6.0", features=["rt-tokio"]}
+tokio = { version = "1.35.1", features = ["full"] }
+toml = "0"
