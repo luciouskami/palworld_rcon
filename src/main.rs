@@ -7,7 +7,7 @@ use toml::Value as TomlValue;
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let args: Vec<String> = env::args().collect();
     if args.len() < 2 {
-        eprintln!("Usage: palworld_rcon <command> [arguments...]");
+        eprintln!("Usage: palworld_rcon");
         exit(1);
     }
 
