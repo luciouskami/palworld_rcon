@@ -49,6 +49,14 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
         "x" => {
             save(&mut connection).await;
         }
+        "kick" => {
+            let steam_id = params.get(0).unwrap();
+            kick_player(&mut connection, steam_id).await;
+        }
+        "ban" => {
+            let steam_id = params.get(0).unwrap();
+            ban_player(&mut connection, steam_id).await;
+        }
         _ => {
             eprintln!("Unknown command");
             exit(1);
@@ -76,4 +84,14 @@ async fn broadcast(connection: &mut Connection<TcpStream>, message: &str) {
 
 async fn save(connection: &mut Connection<TcpStream>) {
     send_command(connection, "Save").await;
+}
+
+async fn kick_player(connection: &mut Connection<TcpStream>, steam_id: &str){
+    send_command(connection, &format!("KickPlayer {}", steam_id)).await;
+
+}
+
+async fn ban_player(connection: &mut Connection<TcpStream>, steam_id: &str){
+    send_command(connection, &format!("BanPlayer {}", steam_id)).await;
+
 }
