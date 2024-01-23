@@ -10,7 +10,7 @@ config.toml example:
 [server]
 ip = "127.0.0.1"
 port = "25575" 
-password = "you admin password"
+password = "your admin password"
 ```
 
 Known Issues:
