@@ -17,6 +17,12 @@ Known Issues:
 
 1. These commands don't have any output (/ShowPlayers)
 
-   If there aren't any people in the server. It w
+   If there aren't any people in the server,it would response:
+
+   ```log
+   "Server response: name,playeruid,steamid"
+   ```
+
+   After someone entered,It will response EOF
 
 2. I didn't add ban and kick, I don't need them for now
