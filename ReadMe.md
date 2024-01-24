@@ -15,8 +15,6 @@ password = "your admin password"
 
 Known Issues:
 
-1. The Server **NEVER RESPONSE ANYTHING**
+1. These commands don't have any output (/ShowPlayers)
 
-2. These commands don't have any output (/ShowPlayers, /Info)
-
-3. I didn't add ban and kick, I don't need them for now
+2. I didn't add ban and kick, I don't need them for now
